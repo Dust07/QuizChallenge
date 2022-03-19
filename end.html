@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header class="headerDiv">
+
+        <a id=leaderboard href="./leaderboard.html">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+            </i></a>
+
+        <div>
+            <p>Time: <span class="countdown"></span></p>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="quizContainer">
+            <div class="quizBox">
+                <h2 id="question" class="questionTag">THE END</h2>
+                <p id="recentScore">Score: </p>
+                <div id="savePlayerContainer">
+                    <p>Player name: </p> <input type="text" id="playerName">
+                    <button id="saveBtn" class="startBtn" onclick="savePlayer()">Save</button>
+                    <p id="savePrompt">Do you want to save this result?</p>
+                </div>
+
+                <button class="startBtn" onclick="backToMainPage()">Play Again</button>
+            </div>
+        </div>
+    </main>
+    <script src="end.js"></script>
+
+
+</body>
+
+</html>
